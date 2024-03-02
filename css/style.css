@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+strong {
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+.primary {
+  color: #ffe600;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  border-bottom: none;
+  transition: border-bottom 0.1s;
+}
+
+li a:after {
+  transition: all ease-in-out 0.2s;
+  background: none repeat scroll 0 0 #ffffff;
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: #ffe600;
+}
+
+li a:hover:after,
+li a:focus:after {
+  width: 100%;
+}
+
+.current-page {
+  border-bottom: #ffe600 solid 3px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1268px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+}
+
+/* navbar */
+
+.logo-img {
+  background-color: #ffe600;
+  padding: 3em 5px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+}
+
+li {
+  margin-left: 2em;
+}
+
+/* typo */
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.main-p {
+  font-size: 1.6em;
+  margin: 3em 0;
+}
+
+/* Layout */
+
+.intro {
+  background-image: url(../img/hero-bg.webp);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 18px;
+}
+
+.main-title {
+  max-width: 850px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* btn */
+.btn {
+  font-weight: 700;
+  margin-top: 1em;
+}
+
+.btn-primary {
+  background-color: #ffe600;
+  padding: 1em 1.7em;
+  color: black;
+}
