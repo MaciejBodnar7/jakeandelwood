@@ -175,6 +175,17 @@ h2 {
   background-color: #ffe600;
   padding: 1em 1.7em;
   color: black;
+  transition: scale 0.3s, border 0.3s, box-shadow 0.3s;
+  border: transparent 5px solid;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  border: white 5px solid;
+  scale: 103%;
+  -webkit-box-shadow: inset 0px 0px 31px -11px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0px 0px 31px -11px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px 0px 31px -11px rgba(0, 0, 0, 1);
 }
 
 /* footer */
