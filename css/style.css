@@ -123,6 +123,48 @@ h2 {
   justify-content: center;
 }
 
+.section2 {
+  margin-top: 4em;
+  margin-bottom: 2em;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section2 div {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.section2 div h2 {
+  font-size: 1.6rem;
+}
+
+.section2 div p {
+  font-size: 1.3em;
+  color: #404040;
+}
+
+.section2-aboutus {
+  width: 30%;
+}
+
+.section2-ourskills {
+  width: 30%;
+}
+
+.section2-getintouch {
+  width: 30%;
+}
+
+.line {
+  display: block;
+  margin: 0 auto;
+  background-color: #ffe600;
+  width: 5em;
+  height: 0.25em;
+}
+
 /* btn */
 .btn {
   font-weight: 700;
@@ -133,4 +175,37 @@ h2 {
   background-color: #ffe600;
   padding: 1em 1.7em;
   color: black;
+}
+
+/* footer */
+footer img {
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: 0.5em;
+}
+
+footer {
+  background: #ebebeb;
+  color: black;
+  padding: 3em 0;
+}
+
+.footer-conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-socialmedia {
+  display: flex;
+  align-items: center;
+}
+
+.footer-main {
+  opacity: 0.4;
+  max-width: 50%;
+  line-height: 1.4;
+}
+
+.origin {
+  margin-top: 4em;
 }
