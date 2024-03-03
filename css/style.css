@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+embed {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 strong {
   font-weight: 700;
 }
@@ -187,8 +193,7 @@ h2 {
 .about-us p {
   font-size: 1.3em;
   text-align: center;
-  width: 60%;
-  min-width: 500px;
+  max-width: 60%;
 }
 
 .about-us {
@@ -446,27 +451,65 @@ footer {
   }
 
   .contact-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-flow: dense; /* avoid empty cells */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .main-aboutus {
+    display: flex;
+    flex-direction: column;
   }
 
-  .fname-label,
-  .fname-input {
-    grid-column: 1;
+  .footer-socialmedia {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  .footer-socialmedia a {
+    margin: 0.5em 0;
+  }
+  /* typo */
+  .header-bg {
+    background-color: rgb(0, 0, 0);
+    font-size: 14px;
   }
 
-  .lname-label,
-  .lname-input {
-    grid-column: 1;
+  h1 {
+    font-size: 24px;
+    margin: 0;
   }
 
-  .message-label,
-  .message-textarea {
-    grid-column: 1;
+  h2 {
+    font-size: 22px;
   }
 
-  .btn-form {
-    grid-column: 1;
+  .main-p {
+    font-size: 1em;
+    margin: 3em 0;
+  }
+
+  .btn-primary {
+    font-size: 10px;
+  }
+  .intro {
+    min-height: 50vh;
+    display: flex;
+  }
+  .main-title {
+    height: 100%;
+  }
+  .section2 {
+    font-size: 0.75rem;
+  }
+  .text-aboutus,
+  .about-us {
+    font-size: 0.75rem;
+  }
+  .about-us p {
+    max-width: 90%;
+  }
+  .main-image {
+    margin-top: 0;
   }
 }
